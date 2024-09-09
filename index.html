@@ -29,7 +29,7 @@
         <div class="home-content">
             <h3>Hi, Myself</h3>
             <h1>Suresh Kumar</h1>
-            <h3>And I'm a <span class="multiple-text">Frontend Developer</span></h3>
+            <h3>And I'm a <span id="element"></span></h3>
             <p>
                 Experienced frontend developer passionate about crafting engaging digital experiences. Skilled in HTML5, CSS3, and JavaScript. Committed to user-centric design, collaboration, and continuous learning. Let's collaborate to create innovative solutions that captivate audiences and drive results. Reach out today!</p>
             <div class="social-media">
@@ -170,8 +170,20 @@
          </div>
    </footer>
 <!-- MAIN JS --> 
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+    strings: ['Frontend Developer','Web Designer', 'Content Creator'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 100,
+    loop: true,
+    });
+  </script>
 <script src="min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
 </html>
